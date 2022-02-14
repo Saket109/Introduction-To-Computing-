@@ -95,7 +95,7 @@ else:
 #4.) Write a program to prompt the user for a grade between 4 and 10 and print the performance
 print("\nTHE SOLUTION OF QUESTION 4 :\n")
 while True:
-    grade=int(input("ENTER YOUR GRADE : "))
+    grade=float(input("ENTER YOUR GRADE : "))
     if 4<=grade<=10:
         if grade==10:
             print("YOUR GRADE IS A+ AND OUTSTANDING PERFORMANCE")
