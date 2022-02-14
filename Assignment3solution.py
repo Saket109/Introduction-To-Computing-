@@ -15,20 +15,20 @@ The occurence(s) of:
 
 THE SOLUTION OF QUESTION 2 :
 
-Day - 2
-Month - 3
-Year - 1999
-Next Date is: 3/03/1999
+Day - 29
+Month - 2
+Year - 2000
+Next Date is: 1/03/2000
 
 THE SOLUTION OF QUESTION 3 :
 
-Enter the list: 2,4,5
-Output: [(2, 4), (4, 16), (5, 25)]
+Enter the list: 3,4,5
+Output: [(3, 9), (4, 16), (5, 25)]
 
 THE SOLUTION OF QUESTION 4 :
 
-ENTER YOUR GRADE : 9
-YOUR GRADE IS A AND EXCELLENT PERFORMANCE
+ENTER YOUR GRADE : 7.8
+YOUR GRADE IS B AND GOOD PERFORMANCE
 
 THE SOLUTION OF QUESTION 5 IS :
 
@@ -45,21 +45,21 @@ ENTER THE NAME : saket
 ENTER THE SID OF saket: 21105105
 
 You have entered 1 value(s) 
-Do you want to enter more data? YES
-ENTER THE NAME : rishabh
-ENTER THE SID OF rishabh: 21105114
-
-You have entered 2 value(s) 
 Do you want to enter more data? y
 ENTER THE NAME : divyam
 ENTER THE SID OF divyam: 21105099
+
+You have entered 2 value(s) 
+Do you want to enter more data? yes
+ENTER THE NAME : rishabh
+ENTER THE SID OF rishabh: 21105114
 
 You have entered 3 value(s) 
 Do you want to enter more data? no
 PART A
 	THE SID OF 'saket'   is   '21105105'
-	THE SID OF 'rishabh'   is   '21105114'
 	THE SID OF 'divyam'   is   '21105099'
+	THE SID OF 'rishabh'   is   '21105114'
 PART B
 THE SID OF 'divyam'   is   '21105099'
 THE SID OF 'rishabh'   is   '21105114'
