@@ -19,7 +19,9 @@
 
 # Implementation of insertion sort by in-place manner.
 
+# defining the function 
 def insertion_sort(arr):
+    # si = starting index 
     for si in range(1,len(arr)):
         val = arr[si]
         curr = si-1
@@ -36,7 +38,13 @@ def insertion_sort(arr):
 
 # if we want to implement the insertion sort by out place manner then we have to use an extra array
 
+# defining the out-place insertion sort function
 def insertion_sort_out_place(arr,si,ei):
+
+    # si = starting index
+    # ei = end index
+
+    # base case
     if si == ei:
         return
     
@@ -56,14 +64,44 @@ def insertion_sort_out_place(arr,si,ei):
             arr[si+1] = temp
             break
 
-    insertion_sort_out_place(arr,si+1,ei)
+    insertion_sort_out_place(arr,si+1,ei)       # calling the function again 
 
-arr1 = [int(ele) for ele in input().split()]
-insertion_sort(arr1)
-print(arr1)
+    # space complexity = O(n)
+    # time complexity = O(1)
 
-arr2 = [int(ele) for ele in input().split()]
+arr1 = [int(ele) for ele in input("Enter the input array separated by spaces : ").split()]        # taking the array input in a single line
+insertion_sort(arr1)            # calling the simple in-place insertion sorting algorithm
+print("sorted array is : ")
+print(arr1) 
+
+arr2 = [int(ele) for ele in input("Enter the input array separated by spaces : ").split()]
 insertion_sort_out_place(arr2,0,len(arr2)-1)
+print("Sorted array is : ")
 print(arr2)
 
+        
+'''
+    QUESTION 3 :  Suggest some practical examples of using in-place and out-place techniques.
+'''
+
+# ANSWER :
+
+'''
+
+In-place techniques have lesser space complexity but are difficult to 
+apply in algorithm whereas out-place techniques are easy to aplly but 
+increases the space complexity of algorithm.
+
+For exapmle if we want to reverse an array then its in-place algorithm
+will be swaping the first and last element of array until we reach the 
+middle of array,If we want to solve the same problem using out-place 
+algorithm we have to create one extra array of same size and copy 
+elements of original array from back to the front of new array,this 
+algorith increases the space complexity to O(n) as we have creaed an 
+extra array.
+
+Examples of In-Place algorithm : Selection sort , Insertion sort , Bubble sort , Heapsort.
+
+Examples of Out-Place algorithm : Merge sort , Radix sort.
+'''
         
