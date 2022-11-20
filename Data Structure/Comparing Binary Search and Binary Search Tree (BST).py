@@ -1,4 +1,9 @@
 '''
+
+    Name = Saket Ahlawat
+    Branch = ECE
+    SID = 21105105
+
     Question : 1. Take an array of numbers.
                2. Use it to construct a BST.
                3. Write separate functions to delete a node from BST and Array.
