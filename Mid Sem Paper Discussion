@@ -1,0 +1,73 @@
+'''
+    QUESTION : Build a binary max heap of the following elements : 12 13 25 14 10 8 16
+'''
+
+'''
+    MY APPROACH : I have given elements as 12,13,25,14,10,8,16 and i have to build a max heap
+    as asked in the question .
+
+    (Note : It is clearly mentioned in the question that i have to build the max heap from the elements
+    instead of heapifying the arr)
+
+    So i will start by giving elements one by one to the max heapify function.
+        12->13->25->14->10->8->16 
+''' 
+ 
+            # This is the code taken from the gfg webstie : 
+# Link : https://www.geeksforgeeks.org/insertion-and-deletion-in-heaps/
+
+def heapify(arr, i):
+    parent = int(((i-1)/2))
+    # For Max-Heap
+    # If current node is greater than its parent
+    # Swap both of them and call heapify again
+    # for the parent
+    if arr[parent] > 0:
+        if arr[i] > arr[parent]:
+            arr[i], arr[parent] = arr[parent], arr[i]
+            # Recursively heapify the parent node
+            heapify(arr, parent)
+# Function to insert a new node to the Heap
+ 
+ 
+def insertNode(arr, key):
+    global n
+    # Increase the size of Heap by 1
+    n += 1
+    # Insert the element at end of Heap
+    arr.append(key)
+    # Heapify the new node following a
+    # Bottom-up approach
+    heapify(arr, len(arr)-1)
+# A utility function to print array of size n
+ 
+ 
+def printArr(arr):
+    for i in range(len(arr)):
+        print(arr[i], end=" ")
+ 
+ 
+
+arr = []
+n = 7
+insertNode(arr,12)
+insertNode(arr, 13)
+insertNode(arr,25)
+insertNode(arr,14)
+insertNode(arr,10)
+insertNode(arr,8)
+insertNode(arr,16)
+printArr(arr)
+
+# Output : 25 14 16 12 10 8 13
+
+
+
+
+
+'''
+    I don't know about the others approach but this is my appraoch after understanding the question
+    from the question paper . And the full question depends upon what is your starting max
+    heap , so i got totally Zero marks just because of the understanding of the question 
+    instead of my knowledge of priroity queues.
+'''
